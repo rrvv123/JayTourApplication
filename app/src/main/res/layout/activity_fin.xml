@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".FINActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/homeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="메인홈 돌아가기" />
+
+            <!-- 핀란드 무민월드 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/moomin_world" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="핀란드의 무민동화 시리즈에 등장하는 캐릭터 무민을 테마로 조성한 어린이를 위한 놀이공원입니다. 핀란드 남서부 해안의 작은 항구도시인 난탈이에 위치하고 있으며, 연각 약 30만 명이 방문하는 핀란드를 대표하는 인기 광광지입니다. 이 테마 공간에서 총 26개의 테마를 즐길 수 있으니 핀란드 여행 시 필수 관광지로 다녀와야 하는 곳입니다."
+                    android:textColor="@color/black"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- 핀란드 산타클로스 마을 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/santa_claus_village" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="산타클로스가 살고 있는 지역이라고 유명한 이 곳, 핀란드에서 꼭 들러야하는 산타클로스 마을은 어린아이들에게 꿈과 희망을 가득 안겨주는 곳입니다. 이곳에 있는 우체국에서는 어린이들이 보낸 편지에 일일이 답장을 해 주는데, 이를 위해 12개 국어를 사용하는 비서들이 산타클로스를 돕고 있다고 합니다. 이처럼 추운지역이지만 마음이 따뜻해지고 아름다운 풍경을 볼 수 있는 산타클로스 마을을 꼭 가보세요."
+                    android:textColor="@color/black"
+                    android:padding="8dp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/take_pointBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="가고싶은 여행지 투표하기"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ReviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="메인홈 돌아가기" />
+
+        <!-- 금각사 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="@integer/material_motion_duration_long_2"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/writeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아래에 리뷰 작성하기:"
+                android:textColor="@color/black"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/mainReviewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="제목을 입력해주세요." />
+            <EditText
+                android:id="@+id/mainReviewContent"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:hint="300자 이내로 작성해주세요." />
+            <Button
+                android:id="@+id/checkedBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="확인" />
+        </LinearLayout>
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/listBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="리뷰목록"
+            android:textStyle="bold"/>
+</LinearLayout>

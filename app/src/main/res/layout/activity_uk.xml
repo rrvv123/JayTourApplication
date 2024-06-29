@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UKActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/homeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="메인홈 돌아가기" />
+
+            <!-- 영국 박물관 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/museum" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="영국박물관은 전 세계 인류 역사와 문화를 아우르는 800만 점 이상의 유물을 소장하고 있습니다. 이 곳을 방문한다면 특별한 경험을 갖게 될 것입니다."
+                    android:textColor="@color/black"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- 런던 아이 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/london_eye" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="런던 아이는 높이 135미터에 달하는 거대한 관람차로 유리 캡슐 안에서 휘황찬란한 도시의 전경을 감상할 수 있습니다."
+                    android:textColor="@color/black"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- 버킹엄 궁전 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/buckingham_palace" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="버킹엄 궁전은 영국 왕실의 권력과 전통을 상징하는 곳이기도 합니다. 화려한 의식이 펼쳐지는 근위병 교대식도 관람이 가능하니 행사에 참여하여 관람하는 것을 추천합니다."
+                    android:textColor="@color/black"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- 타워브리지 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/tower_bridge" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="타워브리지에서 광활하게 펼쳐진 템즈 강을 조망하기 좋습니다. 그리고 런던 일대의 전경을 조망하기에 더할 나위 없는 전망 명소입니다."
+                    android:textColor="@color/black"
+                    android:padding="8dp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/take_pointBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="가고싶은 여행지 투표하기"  />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

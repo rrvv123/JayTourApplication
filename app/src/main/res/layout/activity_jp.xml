@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".JPActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/homeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="메인홈 돌아가기" />
+
+            <!-- 금각사 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/golden_pavilion" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="금각사는 교토에서 가장 인기있는 관광명소 중 한 곳입니다. '금으로 꾸민 누각'이라는 이름에 걸맞게 이 금각사는 유네스코 세계문화유산에 지정될만큼 아름다운 경치를 자아내고있으니 꼭 둘러보세요."
+                    android:textColor="@color/black"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- 기요미즈데라 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/kiyomizu_dera" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="교토의 동쪽에 위치한 기요미즈데라에 발을 들이는 순간 과거로 시간 여행을 한 듯한 착각을 불러일으킵니다. 아름다운 풍경이 눈 앞에 펼쳐지는 것을 확인 할 수 있는 곳입니다."
+                    android:textColor="@color/black"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- 닛코 국립공원 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/nikko_national_park" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="일본에서 가장 아름다운 경치와 가장 많은 방문객을 자랑하는 공원 중 하나입니다. 자연의 매력과 야외활동을 즐기는 사람들에게 아주 알맞은 관광지입니다."
+                    android:textColor="@color/black"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- 히메지성 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/himeji_castle" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="히메지 성은 일본을 통틀어 보존 상태가 가장 우수한 성입니다. 일본 성 건축 양식의 전형이라 할 수 있는 이 곳에서 아름다운 풍경을 감상해보세요."
+                    android:textColor="@color/black"
+                    android:padding="8dp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/take_pointBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="가고싶은 여행지 투표하기"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

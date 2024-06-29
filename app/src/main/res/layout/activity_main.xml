@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!-- 타이틀 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/background"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/JayTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/main_mark"
+            android:drawablePadding="10dp"
+            android:text="Jay's 투어"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <!-- 카테고리 메뉴 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@android:color/holo_orange_light">
+
+            <TextView
+                android:id="@+id/catogory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카테고리"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/summer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌞 여름  추천 나라"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:layout_margin="1dp" />
+
+            <Button
+                android:id="@+id/ukBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영국"
+                android:background="@drawable/solid_button_uk"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/jpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="일본"
+                android:background="@drawable/solid_button_jp"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⛄ 겨울  추천 나라"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:padding="16dp"
+                android:layout_margin="1dp" />
+
+            <Button
+                android:id="@+id/finBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="핀란드"
+                android:background="@drawable/solid_button_fin"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/ausBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="호주"
+                android:background="@drawable/solid_button_aus"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/voteTotalBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/solid_button_home_totalvote"
+                android:text="투표결과" />
+        </LinearLayout>
+
+        <!-- 메인 컨텐츠 영역 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✈️ 바쁜 현대인을 위한 🧳"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="피로 해소 추천 해외여행지"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/airplane_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/airplane" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌍여행의 재발견🌍"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여행은 끊임없이 도전해야하는 모험의 여정입니다..."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/reviewBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✌ 리뷰 작성으로 이벤트참여❕"
+                android:textColor="@color/white"
+                android:background="@drawable/solid_button_review"
+                android:layout_margin="3dp" />
+        </LinearLayout>
+
+        <!-- 여행팁 및 추천 링크 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@android:color/holo_green_light">
+
+            <TextView
+                android:id="@+id/travelTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 여행팁"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💼 여행을 떠나기 전 가고자 하는 나라의 안전정보와 날씨, 환율에 대해 알아두는게 좋겠죠?"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/safeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="❗ 안전정보"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/weatherBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌤️ 세계날씨"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/exchangeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📊 해외환율" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
